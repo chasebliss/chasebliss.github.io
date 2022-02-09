@@ -1,0 +1,113 @@
+button {
+  max-height: 40px;
+}
+
+.blip-hero h3 {
+  border: none;
+}
+
+.update-btn {
+  width: max-content;
+  padding: 20px;
+  border: 1px #357 solid;
+  border-radius: 10px;
+}
+.update-btn .flex-container {
+  margin-bottom: 16px;
+}
+
+.update-btn h4 {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.update-btn button {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.update-btn p {
+  margin-bottom: 0;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.left-border {
+  border-left: 1px solid #357;
+}
+
+.aa-checkbox input {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.stab-slider {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.stab-slider .flex-container {
+  position: absolute;
+  display: flex;
+  height: 48px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.stab-slider p {
+  padding: 0 5px;
+}
+
+.stab-slider input {
+  background: #a3d0e5;
+}
+
+.mod-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.mod-grid div {
+  display: flex;
+}
+
+.mod-select {
+  width: min-content;
+  margin-left: 4px;
+  height: fit-content;
+  font-size: 14px;
+  max-width: 180px;
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-column-gap: 10px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.file-grid button {
+  font-size: 12px;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+.file-grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-grid p {
+  margin-bottom: 0;
+}
+
+.file-grid p:first-child {
+  border-bottom: 1px solid #357;
+  margin-right: 20px;
+}

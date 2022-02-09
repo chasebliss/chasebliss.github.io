@@ -8,2186 +8,368 @@
       href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap"
       rel="stylesheet"
     />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="my-styles.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet" />
+    <link href="spacing.css" rel="stylesheet" />
+    <link href="typography.css" rel="stylesheet" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <div
-      id="main"
-      style="
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        padding-top: 20px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        padding-left: 30px;
-      "
-    >
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          width: 645px;
-          align-items: flex-end;
-        "
-      >
-        <h4 id="title">B.L.I.P</h4>
-        <h5 id="message" class="message"></h5>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
+    <main id="main">
+      <div class="blip-hero sm-bottom-space">
+        <div class="flex-space-between">
+          <h1 id="title">B.L.I.P</h1>
+          <h4 id="message" class="message"></h4>
+        </div>
+        <h3>
           Welcome to B.L.I.P! The Blooper Interface Program. Use me to update
-          firmware,
-        </h6>
+          firmware, download saved loops, and customize the behaviour of your
+          Blooper.
+        </h3>
       </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          download saved loops, and customize the behaviour of your Blooper.
-        </h6>
-      </div>
-      <div style="width: 645px; height: 8px"></div>
-      <div style="width: 645px; height: 20px">
-        <h6><b>NOTES:</b></h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          - This web page runs only Google Chrome and requires either Mac OS or
+
+      <ul class="md-b-space sm-t-space left-border">
+        <h4>NOTES:</h4>
+        <li>
+          This web page runs only Google Chrome and requires either Mac OS or
           Windows.
-        </h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          - Windows users must download and install the free
+        </li>
+
+        <li>
+          Windows users must download and install the free
           <a
             href="https://www.xmos.ai/file/usb-audio-class-20-evaluation-driver-windows"
-            >XMOS audio driver</a
-          >.
-        </h6>
-      </div>
-      <div style="width: 645px; height: 8px"></div>
-      <div style="width: 645px; height: 20px">
-        <h6><b>INSTRUCTIONS:</b></h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          - Make sure your Blooper is powered, and connected via the included
-          USB cable.
-        </h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          - Chrome will request access to <i>use your MIDI devices</i>, select
-          <i>Allow</i>.
-        </h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          - After this page connects with Blooper you will see <i>(Ready)</i> on
-          the top right.
-        </h6>
-      </div>
+          >
+            XMOS audio driver
+          </a>
+          .
+        </li>
+      </ul>
 
-      <div style="width: 645px; height: 2px; background-color: #a3d0e5"></div>
+      <ul class="sm-space left-border">
+        <h4>INSTRUCTIONS:</h4>
+        <li>
+          Make sure your Blooper is powered, and connected via the included USB
+          cable.
+        </li>
 
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          padding-top: 15px;
-          padding-bottom: 5px;
-        "
-      >
-        <div style="display: flex; align-items: center; justify-content: left">
-          <button id="update">Update</button>
+        <li>
+          Chrome will request access to
+          <i>use your MIDI devices</i>
+          , select
+          <i>Allow</i>
+          .
+        </li>
+
+        <li>
+          After this page connects with Blooper you will see
+          <i>(Ready)</i>
+          on the top right.
+        </li>
+      </ul>
+
+      <div class="update-btn lg-space">
+        <div class="flex-container">
+          <button id="update">
+            <p>Update</p>
+          </button>
+          <h4>Firmware v3.1.1</h4>
         </div>
-        <div style="display: flex; width: 16px"></div>
-        <div style="display: flex; align-items: center; justify-content: left">
-          <h5>Firmware v3.1.1</h5>
-        </div>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>Update here for the latest bug fixes and new features.</h6>
+        <small>Update here for the latest bug fixes and new features.</small>
       </div>
 
-      <div style="width: 645px; height: 2px; background-color: #a3d0e5"></div>
-      <div style="width: 645px; height: 10px"></div>
-
-      <div
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: left;
-          padding: 1px 0;
-        "
-      >
-        <h5>Export Session to WAV File(s)</h5>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
+      <div class="sm-space">
+        <h3 class="underline">Export Session to WAV File(s)</h3>
+        <p>
           Here you can download the individual layers of your saved loops. Click
-          any of the layer
-        </h6>
+          any of the layer buttons to download a WAV file of that audio, or use
+          the ALL button to download all layers from the selected loop.
+        </p>
       </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          buttons to download a WAV file of that audio, or use the ALL button to
-          download all
-        </h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>layers from the selected loop.</h6>
-      </div>
-      <div style="width: 645px; height: 8px"></div>
-      <div style="width: 645px; height: 20px">
-        <h6><b>NOTE:</b></h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          - Downloads work one at a time, and interrupting an active download
-          may cause
-        </h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>errors in the audio.</h6>
-      </div>
-      <div style="width: 645px; height: 10px"></div>
+      <div class="sm-space">
+        <h4>NOTE:</h4>
 
-      <div style="display: flex; flex-direction: column" id="save">
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_1">Session 1</h6>
+        <small>
+          Downloads work one at a time, and interrupting an active download may
+          cause errors in the audio.
+        </small>
+      </div>
+
+      <div class="lg-b-space">
+        <div class="file-grid">
+          <div>
+            <p id="session_1">Session 1</p>
+            <p id="length_1">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_1">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_1_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_1_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_1_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_1_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_1_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_1_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_1_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_1_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_1_9">All</button>
-          </div>
+          <button disabled id="dnload_1_1">Layer 1</button>
+          <button disabled id="dnload_1_2">Layer 2</button>
+          <button disabled id="dnload_1_3">Layer 3</button>
+          <button disabled id="dnload_1_4">Layer 4</button>
+          <button disabled id="dnload_1_5">Layer 5</button>
+          <button disabled id="dnload_1_6">Layer 6</button>
+          <button disabled id="dnload_1_7">Layer 7</button>
+          <button disabled id="dnload_1_8">Layer 8</button>
+          <button disabled id="dnload_1_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_2">Session 2</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_2">Session 2</p>
+            <p id="length_2">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_2">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_2_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_2_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_2_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_2_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_2_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_2_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_2_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_2_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_2_9">All</button>
-          </div>
+          <button disabled id="dnload_2_1">Layer 1</button>
+          <button disabled id="dnload_2_2">Layer 2</button>
+          <button disabled id="dnload_2_3">Layer 3</button>
+          <button disabled id="dnload_2_4">Layer 4</button>
+          <button disabled id="dnload_2_5">Layer 5</button>
+          <button disabled id="dnload_2_6">Layer 6</button>
+          <button disabled id="dnload_2_7">Layer 7</button>
+          <button disabled id="dnload_2_8">Layer 8</button>
+          <button disabled id="dnload_2_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_3">Session 3</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_3">Session 3</p>
+            <p id="length_3">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_3">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_3_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_3_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_3_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_3_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_3_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_3_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_3_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_3_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_3_9">All</button>
-          </div>
+          <button disabled id="dnload_3_1">Layer 1</button>
+          <button disabled id="dnload_3_2">Layer 2</button>
+          <button disabled id="dnload_3_3">Layer 3</button>
+          <button disabled id="dnload_3_4">Layer 4</button>
+          <button disabled id="dnload_3_5">Layer 5</button>
+          <button disabled id="dnload_3_6">Layer 6</button>
+          <button disabled id="dnload_3_7">Layer 7</button>
+          <button disabled id="dnload_3_8">Layer 8</button>
+          <button disabled id="dnload_3_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_4">Session 4</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_4">Session 4</p>
+            <p id="length_4">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_4">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_4_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_4_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_4_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_4_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_4_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_4_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_4_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_4_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_4_9">All</button>
-          </div>
+          <button disabled id="dnload_4_1">Layer 1</button>
+          <button disabled id="dnload_4_2">Layer 2</button>
+          <button disabled id="dnload_4_3">Layer 3</button>
+          <button disabled id="dnload_4_4">Layer 4</button>
+          <button disabled id="dnload_4_5">Layer 5</button>
+          <button disabled id="dnload_4_6">Layer 6</button>
+          <button disabled id="dnload_4_7">Layer 7</button>
+          <button disabled id="dnload_4_8">Layer 8</button>
+          <button disabled id="dnload_4_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_5">Session 5</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_5">Session 5</p>
+            <p id="length_5">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_5">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_5_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_5_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_5_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_5_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_5_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_5_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_5_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_5_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_5_9">All</button>
-          </div>
+          <button disabled id="dnload_5_1">Layer 1</button>
+          <button disabled id="dnload_5_2">Layer 2</button>
+          <button disabled id="dnload_5_3">Layer 3</button>
+          <button disabled id="dnload_5_4">Layer 4</button>
+          <button disabled id="dnload_5_5">Layer 5</button>
+          <button disabled id="dnload_5_6">Layer 6</button>
+          <button disabled id="dnload_5_7">Layer 7</button>
+          <button disabled id="dnload_5_8">Layer 8</button>
+          <button disabled id="dnload_5_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_6">Session 6</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_6">Session 6</p>
+            <p id="length_6">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_6">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_6_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_6_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_6_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_6_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_6_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_6_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_6_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_6_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_6_9">All</button>
-          </div>
+          <button disabled id="dnload_6_1">Layer 1</button>
+          <button disabled id="dnload_6_2">Layer 2</button>
+          <button disabled id="dnload_6_3">Layer 3</button>
+          <button disabled id="dnload_6_4">Layer 4</button>
+          <button disabled id="dnload_6_5">Layer 5</button>
+          <button disabled id="dnload_6_6">Layer 6</button>
+          <button disabled id="dnload_6_7">Layer 7</button>
+          <button disabled id="dnload_6_8">Layer 8</button>
+          <button disabled id="dnload_6_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_7">Session 7</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_7">Session 7</p>
+            <p id="length_7">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_7">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_7_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_7_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_7_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_7_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_7_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_7_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_7_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_7_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_7_9">All</button>
-          </div>
+          <button disabled id="dnload_7_1">Layer 1</button>
+          <button disabled id="dnload_7_2">Layer 2</button>
+          <button disabled id="dnload_7_3">Layer 3</button>
+          <button disabled id="dnload_7_4">Layer 4</button>
+          <button disabled id="dnload_7_5">Layer 5</button>
+          <button disabled id="dnload_7_6">Layer 6</button>
+          <button disabled id="dnload_7_7">Layer 7</button>
+          <button disabled id="dnload_7_8">Layer 8</button>
+          <button disabled id="dnload_7_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_8">Session 8</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_8">Session 8</p>
+            <p id="length_8">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_8">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_8_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_8_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_8_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_8_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_8_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_8_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_8_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_8_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_8_9">All</button>
-          </div>
+          <button disabled id="dnload_8_1">Layer 1</button>
+          <button disabled id="dnload_8_2">Layer 2</button>
+          <button disabled id="dnload_8_3">Layer 3</button>
+          <button disabled id="dnload_8_4">Layer 4</button>
+          <button disabled id="dnload_8_5">Layer 5</button>
+          <button disabled id="dnload_8_6">Layer 6</button>
+          <button disabled id="dnload_8_7">Layer 7</button>
+          <button disabled id="dnload_8_8">Layer 8</button>
+          <button disabled id="dnload_8_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_9">Session 9</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_9">Session 9</p>
+            <p id="length_9">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_9">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_9_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_9_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_9_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_9_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_9_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_9_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_9_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_9_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_9_9">All</button>
-          </div>
+          <button disabled id="dnload_9_1">Layer 1</button>
+          <button disabled id="dnload_9_2">Layer 2</button>
+          <button disabled id="dnload_9_3">Layer 3</button>
+          <button disabled id="dnload_9_4">Layer 4</button>
+          <button disabled id="dnload_9_5">Layer 5</button>
+          <button disabled id="dnload_9_6">Layer 6</button>
+          <button disabled id="dnload_9_7">Layer 7</button>
+          <button disabled id="dnload_9_8">Layer 8</button>
+          <button disabled id="dnload_9_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_10">Session 10</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_10">Session 10</p>
+            <p id="length_10">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_10">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_10_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_10_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_10_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_10_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_10_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_10_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_10_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_10_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_10_9">All</button>
-          </div>
+          <button disabled id="dnload_10_1">Layer 1</button>
+          <button disabled id="dnload_10_2">Layer 2</button>
+          <button disabled id="dnload_10_3">Layer 3</button>
+          <button disabled id="dnload_10_4">Layer 4</button>
+          <button disabled id="dnload_10_5">Layer 5</button>
+          <button disabled id="dnload_10_6">Layer 6</button>
+          <button disabled id="dnload_10_7">Layer 7</button>
+          <button disabled id="dnload_10_8">Layer 8</button>
+          <button disabled id="dnload_10_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_11">Session 11</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_11">Session 11</p>
+            <p id="length_11">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_11">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_11_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_11_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_11_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_11_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_11_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_11_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_11_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_11_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_11_9">All</button>
-          </div>
+          <button disabled id="dnload_11_1">Layer 1</button>
+          <button disabled id="dnload_11_2">Layer 2</button>
+          <button disabled id="dnload_11_3">Layer 3</button>
+          <button disabled id="dnload_11_4">Layer 4</button>
+          <button disabled id="dnload_11_5">Layer 5</button>
+          <button disabled id="dnload_11_6">Layer 6</button>
+          <button disabled id="dnload_11_7">Layer 7</button>
+          <button disabled id="dnload_11_8">Layer 8</button>
+          <button disabled id="dnload_11_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_12">Session 12</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_12">Session 12</p>
+            <p id="length_12">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_12">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_12_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_12_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_12_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_12_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_12_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_12_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_12_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_12_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_12_9">All</button>
-          </div>
+          <button disabled id="dnload_12_1">Layer 1</button>
+          <button disabled id="dnload_12_2">Layer 2</button>
+          <button disabled id="dnload_12_3">Layer 3</button>
+          <button disabled id="dnload_12_4">Layer 4</button>
+          <button disabled id="dnload_12_5">Layer 5</button>
+          <button disabled id="dnload_12_6">Layer 6</button>
+          <button disabled id="dnload_12_7">Layer 7</button>
+          <button disabled id="dnload_12_8">Layer 8</button>
+          <button disabled id="dnload_12_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_13">Session 13</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_13">Session 13</p>
+            <p id="length_13">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_13">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_13_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_13_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_13_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_13_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_13_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_13_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_13_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_13_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_13_9">All</button>
-          </div>
+          <button disabled id="dnload_13_1">Layer 1</button>
+          <button disabled id="dnload_13_2">Layer 2</button>
+          <button disabled id="dnload_13_3">Layer 3</button>
+          <button disabled id="dnload_13_4">Layer 4</button>
+          <button disabled id="dnload_13_5">Layer 5</button>
+          <button disabled id="dnload_13_6">Layer 6</button>
+          <button disabled id="dnload_13_7">Layer 7</button>
+          <button disabled id="dnload_13_8">Layer 8</button>
+          <button disabled id="dnload_13_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_14">Session 14</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_14">Session 14</p>
+            <p id="length_14">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_14">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_14_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_14_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_14_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_14_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_14_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_14_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_14_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_14_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_14_9">All</button>
-          </div>
+          <button disabled id="dnload_14_1">Layer 1</button>
+          <button disabled id="dnload_14_2">Layer 2</button>
+          <button disabled id="dnload_14_3">Layer 3</button>
+          <button disabled id="dnload_14_4">Layer 4</button>
+          <button disabled id="dnload_14_5">Layer 5</button>
+          <button disabled id="dnload_14_6">Layer 6</button>
+          <button disabled id="dnload_14_7">Layer 7</button>
+          <button disabled id="dnload_14_8">Layer 8</button>
+          <button disabled id="dnload_14_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_15">Session 15</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_15">Session 15</p>
+            <p id="length_15">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_15">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_15_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_15_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_15_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_15_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_15_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_15_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_15_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_15_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_15_9">All</button>
-          </div>
+          <button disabled id="dnload_15_1">Layer 1</button>
+          <button disabled id="dnload_15_2">Layer 2</button>
+          <button disabled id="dnload_15_3">Layer 3</button>
+          <button disabled id="dnload_15_4">Layer 4</button>
+          <button disabled id="dnload_15_5">Layer 5</button>
+          <button disabled id="dnload_15_6">Layer 6</button>
+          <button disabled id="dnload_15_7">Layer 7</button>
+          <button disabled id="dnload_15_8">Layer 8</button>
+          <button disabled id="dnload_15_9">All</button>
         </div>
-        <div style="display: flex; flex-direction: row; height: 28px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 90px;
-            "
-          >
-            <h6 id="session_16">Session 16</h6>
+        <div class="file-grid">
+          <div>
+            <p id="session_16">Session 16</p>
+            <p id="length_16">0.0</p>
           </div>
-          <div style="display: flex; width: 1px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 36px;
-            "
-          >
-            <h6 id="length_16">0.0</h6>
-          </div>
-          <div style="display: flex; width: 16px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_16_1">Layer 1</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_16_2">Layer 2</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_16_3">Layer 3</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_16_4">Layer 4</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_16_5">Layer 5</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_16_6">Layer 6</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_16_7">Layer 7</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 55px;
-            "
-          >
-            <button disabled id="dnload_16_8">Layer 8</button>
-          </div>
-          <div style="display: flex; width: 4px"></div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              width: 32px;
-            "
-          >
-            <button disabled id="dnload_16_9">All</button>
-          </div>
+          <button disabled id="dnload_16_1">Layer 1</button>
+          <button disabled id="dnload_16_2">Layer 2</button>
+          <button disabled id="dnload_16_3">Layer 3</button>
+          <button disabled id="dnload_16_4">Layer 4</button>
+          <button disabled id="dnload_16_5">Layer 5</button>
+          <button disabled id="dnload_16_6">Layer 6</button>
+          <button disabled id="dnload_16_7">Layer 7</button>
+          <button disabled id="dnload_16_8">Layer 8</button>
+          <button disabled id="dnload_16_9">All</button>
         </div>
       </div>
 
-      <div style="width: 660px; height: 10px"></div>
-      <div style="width: 645px; height: 2px; background-color: #a3d0e5"></div>
-      <div style="width: 660px; height: 10px"></div>
-      <div style="display: flex; align-items: center; justify-content: left">
-        <h5>Modifier Assignments</h5>
-      </div>
-
-      <div style="width: 645px; height: 20px">
-        <h6>
+      <div class="lg-space">
+        <h3>Modifier Assignments</h3>
+        <p>
           Customize the arrangement of your modifiers! Changes take place
-          immediately and do
-        </h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          not require you to update the firmware. The ALT banks are accessed
-          using the BANK A
-        </h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>and BANK B dip switches on the back of the pedal.</h6>
-      </div>
-      <div style="width: 645px; height: 8px"></div>
-      <div style="width: 645px; height: 20px">
-        <h6><b>NOTES:</b></h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          - If the names of two modifiers are shown in red, it means they will
-          create some odd
-        </h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          behaviour when used together. You’re still free to use them, but it
-          will get weird.
-        </h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          - It’s not possible to use two versions of the same modifier at once.
-        </h6>
-      </div>
-      <div style="width: 660px; height: 10px"></div>
+          immediately and do not require you to update the firmware. The ALT
+          banks are accessed using the BANK A and BANK B dip switches on the
+          back of the pedal.
+        </p>
 
-      <div style="display: flex; flex-direction: row; height: 20px">
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 100px;
-          "
-        >
-          <h6 id="modifiers_A1">Bank A</h6>
-        </div>
-        <div style="display: flex; width: 20px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>1</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankA1" style="width: 144px">
+        <ul class="sm-space left-border">
+          <h4>NOTES:</h4>
+          <li>
+            If the names of two modifiers are shown in red, it means they will
+            create some odd behaviour when used together. You’re still free to
+            use them, but it will get weird.
+          </li>
+
+          <li>
+            It’s not possible to use two versions of the same modifier at once.
+          </li>
+        </ul>
+      </div>
+
+      <div class="sm-space mod-grid">
+        <p id="modifiers_A1">Bank A</p>
+
+        <div>
+          <p>1</p>
+          <select class="mod-select" name="" id="bankA1">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2206,27 +388,10 @@
             <option value="15">Stretcher (Stepped)</option>
           </select>
         </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>2</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankA2" style="align-items: center; width: 144px">
+
+        <div>
+          <p>2</p>
+          <select class="mod-select" name="" id="bankA2">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2245,27 +410,10 @@
             <option value="15">Stretcher (Stepped)</option>
           </select>
         </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>3</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankA3" style="width: 144px">
+
+        <div>
+          <p>3</p>
+          <select class="mod-select" name="" id="bankA3">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2286,41 +434,12 @@
         </div>
       </div>
 
-      <div style="width: 660px; height: 10px"></div>
+      <div class="sm-space mod-grid">
+        <p id="modifiers_A1">Bank A (Alt)</p>
 
-      <div style="display: flex; flex-direction: row; height: 20px">
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 100px;
-          "
-        >
-          <h6 id="modifiers_A1">Bank A (Alt)</h6>
-        </div>
-        <div style="display: flex; width: 20px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>1</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankA4" style="width: 144px">
+        <div>
+          <p>1</p>
+          <select class="mod-select" name="" id="bankA4">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2339,27 +458,10 @@
             <option value="15">Stretcher (Stepped)</option>
           </select>
         </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>2</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankA5" style="align-items: center; width: 144px">
+
+        <div>
+          <p>2</p>
+          <select class="mod-select" name="" id="bankA5">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2378,27 +480,10 @@
             <option value="15">Stretcher (Stepped)</option>
           </select>
         </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>3</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankA6" style="width: 144px">
+
+        <div>
+          <p>3</p>
+          <select class="mod-select" name="" id="bankA6">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2419,41 +504,12 @@
         </div>
       </div>
 
-      <div style="width: 660px; height: 10px"></div>
+      <div class="mod-grid">
+        <p id="modifiers_A1">Bank B</p>
 
-      <div style="display: flex; flex-direction: row; height: 20px">
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 100px;
-          "
-        >
-          <h6 id="modifiers_A1">Bank B</h6>
-        </div>
-        <div style="display: flex; width: 20px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>4</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankB1" style="width: 144px">
+        <div>
+          <p>4</p>
+          <select class="mod-select" name="" id="bankB1">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2472,27 +528,10 @@
             <option value="15">Stretcher (Stepped)</option>
           </select>
         </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>5</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankB2" style="align-items: center; width: 144px">
+
+        <div>
+          <p>5</p>
+          <select class="mod-select" name="" id="bankB2">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2511,27 +550,10 @@
             <option value="15">Stretcher (Stepped)</option>
           </select>
         </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>6</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankB3" style="width: 144px">
+
+        <div>
+          <p>6</p>
+          <select class="mod-select" name="" id="bankB3">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2552,41 +574,12 @@
         </div>
       </div>
 
-      <div style="width: 660px; height: 10px"></div>
+      <div class="mod-grid sm-space">
+        <p id="modifiers_A1">Bank B (Alt)</p>
 
-      <div style="display: flex; flex-direction: row; height: 20px">
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 100px;
-          "
-        >
-          <h6 id="modifiers_A1">Bank B (Alt)</h6>
-        </div>
-        <div style="display: flex; width: 20px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>4</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankB4" style="width: 144px">
+        <div>
+          <p>4</p>
+          <select class="mod-select" name="" id="bankB4">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2605,27 +598,10 @@
             <option value="15">Stretcher (Stepped)</option>
           </select>
         </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>5</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankB5" style="align-items: center; width: 144px">
+
+        <div>
+          <p>5</p>
+          <select class="mod-select" name="" id="bankB5">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2644,27 +620,10 @@
             <option value="15">Stretcher (Stepped)</option>
           </select>
         </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 10px;
-          "
-        >
-          <h6>6</h6>
-        </div>
-        <div style="display: flex; width: 3px"></div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            height: 12px;
-            width: 170px;
-          "
-        >
-          <select name="" id="bankB6" style="width: 144px">
+
+        <div>
+          <p>6</p>
+          <select class="mod-select" name="" id="bankB6">
             <option value="1">Dropper</option>
             <option value="2">Scrambler</option>
             <option value="3">Trimmer (Smooth)</option>
@@ -2685,115 +644,53 @@
         </div>
       </div>
 
-      <div style="width: 660px; height: 10px"></div>
-      <div style="width: 645px; height: 2px; background-color: #a3d0e5"></div>
-      <div style="width: 660px; height: 10px"></div>
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: left;
-        "
-      >
-        <h5>Additive Assist</h5>
-      </div>
-
-      <div style="width: 645px; height: 20px">
-        <h6>
-          Use this for more precise recording of modifiers. When engaged,
-          Blooper gives you an
-        </h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          accurate preview of how a one-shot recording will sound during
-          playback.
-        </h6>
-      </div>
-      <div style="width: 645px; height: 8px"></div>
-      <div style="width: 645px; height: 20px">
-        <h6><b>NOTES:</b></h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>- This feature only affects ADD mode.</h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>
-          - This feature will cause quirks on the clockwise half of Trimmer, and
-          the
-        </h6>
-      </div>
-      <div style="width: 645px; height: 20px">
-        <h6>counter-clockwise half of Stutter.</h6>
-      </div>
-      <div style="width: 660px; height: 10px"></div>
-
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: left;
-        "
-      >
-        <input
-          type="checkbox"
-          id="add_assist"
-          style="width: 16px; height: 16px"
-        />
-        <div style="width: 20px; height: 1px"></div>
-        <h6>Enable</h6>
-      </div>
-
-      <div style="width: 660px; height: 10px"></div>
-      <div style="width: 645px; height: 2px; background-color: #a3d0e5"></div>
-      <div style="width: 660px; height: 10px"></div>
-      <div style="display: flex; align-items: center; justify-content: left">
-        <h5>Stability Noise</h5>
-      </div>
-
-      <div style="width: 645px; height: 20px">
-        <h6>Customize the level of noise for the stability effect.</h6>
-      </div>
-
-      <div style="width: 100%; justify-content: top; position: relative">
-        <div
-          style="
-            display: flex;
-            position: absolute;
-            padding-left: 12px;
-            width: 645px;
-          "
-        >
-          <h6
-            style="
-              pointer-events: none;
-              width: 100%;
-              align-items: center;
-              color: #000;
-            "
-            id="noise_min"
-          >
-            Least
-          </h6>
-          <h6 style="pointer-events: none; color: #000" id="noise_max">Most</h6>
-          <div style="width: 20px"></div>
+      <div class="lg-space">
+        <div>
+          <h3>Additive Assist</h3>
+          <p>
+            Use this for more precise recording of modifiers. When engaged,
+            Blooper gives you an accurate preview of how a one-shot recording
+            will sound during playback.
+          </p>
         </div>
-        <input
-          style="position: absolute; background: #a3d0e5"
-          class="slider"
-          type="range"
-          min="1"
-          max="99"
-          step="1"
-          value="50"
-          id="noise"
-        />
-      </div>
 
-      <div style="width: 660px; height: 20px"></div>
-    </div>
+        <div>
+          <ul class="sm-space left-border">
+            <h4>NOTES:</h4>
+            <li>This feature only affects ADD mode.</li>
+
+            <li>
+              This feature will cause quirks on the clockwise half of Trimmer,
+              and the counter-clockwise half of Stutter.
+            </li>
+          </ul>
+        </div>
+
+        <label class="aa-checkbox">
+          <input type="checkbox" id="add_assist" />
+          Enable
+        </label>
+      </div>
+      <div class="lg-space">
+        <h3>Stability Noise</h3>
+        <p>Customize the level of noise for the stability effect.</p>
+        <div class="stab-slider sm-space">
+          <div class="flex-container">
+            <p id="noise_min">Least</p>
+            <p id="noise_max">Most</p>
+          </div>
+          <input
+            class="slider"
+            type="range"
+            min="1"
+            max="99"
+            step="1"
+            value="50"
+            id="noise"
+          />
+        </div>
+      </div>
+    </main>
   </body>
 
   <script>

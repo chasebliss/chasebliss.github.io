@@ -1,0 +1,35 @@
+.sm-space {
+  margin: 30px 0;
+}
+
+.md-space {
+  margin: 50px 0;
+}
+
+.lg-space {
+  margin: 60px 0;
+}
+
+.sm-b-space {
+  margin-bottom: 30px;
+}
+
+.md-b-space {
+  margin-bottom: 50px;
+}
+
+.lg-b-space {
+  margin-bottom: 60px;
+}
+
+.sm-t-space {
+  margin-top: 30px;
+}
+
+.md-t-space {
+  margin-top: 50px;
+}
+
+.lg-t-space {
+  margin-top: 60px;
+}

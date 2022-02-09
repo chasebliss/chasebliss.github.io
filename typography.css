@@ -1,0 +1,54 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+small {
+  width: fit-content;
+  max-width: 55ch;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: max-content;
+  border-bottom: 2px solid #357;
+}
+
+h4,
+label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+small {
+  font-size: 16px;
+}
+
+ol,
+ul {
+  padding-left: 20px;
+}
+
+li {
+  padding: 6px;
+  margin-left: 20px;
+  font-size: 16px;
+  list-style-type: circle;
+}

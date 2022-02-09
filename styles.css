@@ -5,21 +5,10 @@ html {
 }
 body {
   margin: 0;
+  font-size: 16px;
   line-height: 140%;
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-button {
-  overflow: visible;
-}
 button,
 select {
   text-transform: none;
@@ -30,9 +19,9 @@ select {
 }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer;
 }
@@ -41,7 +30,10 @@ button[disabled],
 html input[disabled] {
   cursor: default;
 }
-
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
 .container {
   position: relative;
   width: 100%;
@@ -56,72 +48,18 @@ html input[disabled] {
   padding: 10px;
 }
 
-html {
-  font-size: 62.5%;
-}
 body {
   font-size: 1.5em;
   font-weight: 400;
-  font-family: "Sanchez", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+  font-family: 'Sanchez', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
   background-color: #fff;
   color: #357;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-weight: 300;
-}
-h1 {
-  font-size: 4rem;
-  letter-spacing: -0.1rem;
-}
-h2 {
-  font-size: 3.6rem;
-  letter-spacing: -0.1rem;
-}
-h3 {
-  font-size: 3rem;
-  letter-spacing: -0.1rem;
-}
-h4 {
-  font-size: 3rem;
-  letter-spacing: -0rem;
-}
-h5 {
-  font-size: 1.8rem;
-  letter-spacing: -0.05rem;
-}
-h6 {
-  font-size: 1.5rem;
-  letter-spacing: 0;
-  color: #000;
-}
-h9 {
-  font-size: 1.4rem;
-  letter-spacing: 0.05rem;
-}
-
-.message {
-  font-size: 1.5rem;
-  letter-spacing: -0.05rem;
-  color: #000;
-}
-
-/* content img url from knobscreative.com */
-.message::after {
-  content: url("https://images.squarespace-cdn.com/content/v1/5e9498ff28a31c410e4cc1bd/1586998406860-VGMK7ROFH63O453A8XZ3/ke17ZwdGBToddI8pDm48kLjcMuGWp1lJEmQgvPcfaydZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI3BVWku5osY7VlmAh450lTvj4ug1Vfknv5r1J4VpBE8g/Tight+squiggle.png?format=300w");
-  position: absolute;
-  top: 0;
-  left: 400px;
-  z-index: -1;
-  opacity: 0.4;
+main {
+  max-width: 800px;
+  margin: 60px auto;
 }
 
 checkbox,
@@ -133,15 +71,13 @@ checkbox,
 .checkbox,
 checkbox,
 select,
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: inline-block;
+  width: 16px;
   height: 16px;
-  width: 92px;
-  padding: 0 0px;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0rem;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
@@ -155,7 +91,7 @@ input[type="checkbox"] {
 
 input.checkbox:focus,
 checkbox:focus,
-input[type="checkbox"]:focus {
+input[type='checkbox']:focus {
   color: #000;
   background-color: #fff;
   border-color: #999;
@@ -164,7 +100,7 @@ input[type="checkbox"]:focus {
 
 input.checkbox:disabled,
 checkbox:disabled,
-input[type="checkbox"]:disabled {
+input[type='checkbox']:disabled {
   color: #999;
   background-color: #ededed;
   border-color: #ededed;
@@ -180,17 +116,9 @@ button,
 .button,
 button,
 select,
-input[type="button"] {
-  display: inline-block;
-  height: 24px;
-  width: 92px;
-  padding: 0 0px;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
+input[type='button'] {
+  padding: 4px 16px;
   text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
   background-color: #a3d0e5;
   color: #000;
   box-sizing: border-box;
@@ -201,7 +129,7 @@ input[type="button"] {
 
 input.button:hover,
 button:hover,
-input[type="button"]:hover {
+input[type='button']:hover {
   color: #eee;
   background-color: #357;
   border-color: #357;
@@ -215,7 +143,7 @@ select:hover {
 
 input.button:focus,
 button:focus,
-input[type="button"]:focus {
+input[type='button']:focus {
   color: #000;
   background-color: #fff;
   border-color: #999;
@@ -224,7 +152,7 @@ input[type="button"]:focus {
 
 input.button:disabled,
 button:disabled,
-input[type="button"]:disabled {
+input[type='button']:disabled {
   color: #999;
   background-color: #ededed;
   border-color: #ededed;
@@ -233,7 +161,7 @@ input[type="button"]:disabled {
 
 input.select:disabled,
 select:disabled,
-input[type="select"]:disabled {
+input[type='select']:disabled {
   color: #999;
   background-color: #ededed;
   border-color: #ededed;
@@ -246,8 +174,8 @@ input.slider {
   justify-content: left;
   -webkit-appearance: none;
   -webkit-transition: 0.2s;
-  width: 645px;
-  height: 24px;
+  width: 100%;
+  height: 48px;
   outline: none;
   border-radius: 3px;
   border: 1px solid #fff;
@@ -261,7 +189,7 @@ input.slider::-webkit-slider-thumb {
   appearance: none;
   opacity: 0.8;
   width: 48px;
-  height: 22px;
+  height: 40px;
   border-radius: 3px;
   border: 1px solid #fff;
   background: #124;
@@ -285,7 +213,7 @@ input.slider::-webkit-slider-thumb:hover {
 
 input.checkbox:hover,
 checkbox:hover,
-input[type="checkbox"]:hover {
+input[type='checkbox']:hover {
   color: #eee;
   background-color: #357;
   border-color: #357;
