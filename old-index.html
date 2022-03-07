@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ChaseBliss Blooper Firmware Update v3.1.1</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/legacy.css" rel="stylesheet" />
+    <link href="styles/my-styles.css" rel="stylesheet" />
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/spacing.css" rel="stylesheet" />
+    <link href="styles/typography.css" rel="stylesheet" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <main id="main">
+      <div class="blip-hero sm-bottom-space">
+        <div class="flex-space-between">
+          <h1 id="title">B.L.I.P</h1>
+          <h4 id="message" class="message"></h4>
+        </div>
+        <h3>
+          Welcome to B.L.I.P! The Blooper Interface Program. Use me to update
+          firmware, download saved loops, and customize the behaviour of your
+          Blooper.
+        </h3>
+      </div>
+
+      <ul class="md-b-space sm-t-space left-border">
+        <h4>NOTES:</h4>
+        <li>
+          This web page runs only Google Chrome and requires either Mac OS or
+          Windows.
+        </li>
+
+        <li>
+          Windows users must download and install the free
+          <a
+            href="https://www.xmos.ai/file/usb-audio-class-20-evaluation-driver-windows"
+          >
+            XMOS audio driver
+          </a>
+          .
+        </li>
+      </ul>
+
+      <ul class="sm-space left-border">
+        <h4>INSTRUCTIONS:</h4>
+        <li>
+          Make sure your Blooper is powered, and connected via the included USB
+          cable.
+        </li>
+
+        <li>
+          Chrome will request access to
+          <i>use your MIDI devices</i>
+          , select
+          <i>Allow</i>
+          .
+        </li>
+
+        <li>
+          After this page connects with Blooper you will see
+          <i>(Ready)</i>
+          on the top right.
+        </li>
+      </ul>
+
+      <div class="update-btn lg-space">
+        <div class="flex-container">
+          <button id="update">
+            <p>Update</p>
+          </button>
+          <h4>Firmware v3.1.1</h4>
+        </div>
+        <small>Update here for the latest bug fixes and new features.</small>
+      </div>
+
+      <div class="sm-space">
+        <h3 class="underline">Export Session to WAV File(s)</h3>
+        <p>
+          Here you can download the individual layers of your saved loops. Click
+          any of the layer buttons to download a WAV file of that audio, or use
+          the ALL button to download all layers from the selected loop.
+        </p>
+      </div>
+      <div class="sm-space">
+        <h4>NOTE:</h4>
+
+        <small>
+          Downloads work one at a time, and interrupting an active download may
+          cause errors in the audio.
+        </small>
+      </div>
+
+      <div class="lg-b-space">
+        <div class="file-grid">
+          <div>
+            <p id="session_1">Session 1</p>
+            <p id="length_1">0.0</p>
+          </div>
+          <button disabled id="dnload_1_1">Layer 1</button>
+          <button disabled id="dnload_1_2">Layer 2</button>
+          <button disabled id="dnload_1_3">Layer 3</button>
+          <button disabled id="dnload_1_4">Layer 4</button>
+          <button disabled id="dnload_1_5">Layer 5</button>
+          <button disabled id="dnload_1_6">Layer 6</button>
+          <button disabled id="dnload_1_7">Layer 7</button>
+          <button disabled id="dnload_1_8">Layer 8</button>
+          <button disabled id="dnload_1_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_2">Session 2</p>
+            <p id="length_2">0.0</p>
+          </div>
+          <button disabled id="dnload_2_1">Layer 1</button>
+          <button disabled id="dnload_2_2">Layer 2</button>
+          <button disabled id="dnload_2_3">Layer 3</button>
+          <button disabled id="dnload_2_4">Layer 4</button>
+          <button disabled id="dnload_2_5">Layer 5</button>
+          <button disabled id="dnload_2_6">Layer 6</button>
+          <button disabled id="dnload_2_7">Layer 7</button>
+          <button disabled id="dnload_2_8">Layer 8</button>
+          <button disabled id="dnload_2_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_3">Session 3</p>
+            <p id="length_3">0.0</p>
+          </div>
+          <button disabled id="dnload_3_1">Layer 1</button>
+          <button disabled id="dnload_3_2">Layer 2</button>
+          <button disabled id="dnload_3_3">Layer 3</button>
+          <button disabled id="dnload_3_4">Layer 4</button>
+          <button disabled id="dnload_3_5">Layer 5</button>
+          <button disabled id="dnload_3_6">Layer 6</button>
+          <button disabled id="dnload_3_7">Layer 7</button>
+          <button disabled id="dnload_3_8">Layer 8</button>
+          <button disabled id="dnload_3_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_4">Session 4</p>
+            <p id="length_4">0.0</p>
+          </div>
+          <button disabled id="dnload_4_1">Layer 1</button>
+          <button disabled id="dnload_4_2">Layer 2</button>
+          <button disabled id="dnload_4_3">Layer 3</button>
+          <button disabled id="dnload_4_4">Layer 4</button>
+          <button disabled id="dnload_4_5">Layer 5</button>
+          <button disabled id="dnload_4_6">Layer 6</button>
+          <button disabled id="dnload_4_7">Layer 7</button>
+          <button disabled id="dnload_4_8">Layer 8</button>
+          <button disabled id="dnload_4_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_5">Session 5</p>
+            <p id="length_5">0.0</p>
+          </div>
+          <button disabled id="dnload_5_1">Layer 1</button>
+          <button disabled id="dnload_5_2">Layer 2</button>
+          <button disabled id="dnload_5_3">Layer 3</button>
+          <button disabled id="dnload_5_4">Layer 4</button>
+          <button disabled id="dnload_5_5">Layer 5</button>
+          <button disabled id="dnload_5_6">Layer 6</button>
+          <button disabled id="dnload_5_7">Layer 7</button>
+          <button disabled id="dnload_5_8">Layer 8</button>
+          <button disabled id="dnload_5_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_6">Session 6</p>
+            <p id="length_6">0.0</p>
+          </div>
+          <button disabled id="dnload_6_1">Layer 1</button>
+          <button disabled id="dnload_6_2">Layer 2</button>
+          <button disabled id="dnload_6_3">Layer 3</button>
+          <button disabled id="dnload_6_4">Layer 4</button>
+          <button disabled id="dnload_6_5">Layer 5</button>
+          <button disabled id="dnload_6_6">Layer 6</button>
+          <button disabled id="dnload_6_7">Layer 7</button>
+          <button disabled id="dnload_6_8">Layer 8</button>
+          <button disabled id="dnload_6_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_7">Session 7</p>
+            <p id="length_7">0.0</p>
+          </div>
+          <button disabled id="dnload_7_1">Layer 1</button>
+          <button disabled id="dnload_7_2">Layer 2</button>
+          <button disabled id="dnload_7_3">Layer 3</button>
+          <button disabled id="dnload_7_4">Layer 4</button>
+          <button disabled id="dnload_7_5">Layer 5</button>
+          <button disabled id="dnload_7_6">Layer 6</button>
+          <button disabled id="dnload_7_7">Layer 7</button>
+          <button disabled id="dnload_7_8">Layer 8</button>
+          <button disabled id="dnload_7_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_8">Session 8</p>
+            <p id="length_8">0.0</p>
+          </div>
+          <button disabled id="dnload_8_1">Layer 1</button>
+          <button disabled id="dnload_8_2">Layer 2</button>
+          <button disabled id="dnload_8_3">Layer 3</button>
+          <button disabled id="dnload_8_4">Layer 4</button>
+          <button disabled id="dnload_8_5">Layer 5</button>
+          <button disabled id="dnload_8_6">Layer 6</button>
+          <button disabled id="dnload_8_7">Layer 7</button>
+          <button disabled id="dnload_8_8">Layer 8</button>
+          <button disabled id="dnload_8_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_9">Session 9</p>
+            <p id="length_9">0.0</p>
+          </div>
+          <button disabled id="dnload_9_1">Layer 1</button>
+          <button disabled id="dnload_9_2">Layer 2</button>
+          <button disabled id="dnload_9_3">Layer 3</button>
+          <button disabled id="dnload_9_4">Layer 4</button>
+          <button disabled id="dnload_9_5">Layer 5</button>
+          <button disabled id="dnload_9_6">Layer 6</button>
+          <button disabled id="dnload_9_7">Layer 7</button>
+          <button disabled id="dnload_9_8">Layer 8</button>
+          <button disabled id="dnload_9_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_10">Session 10</p>
+            <p id="length_10">0.0</p>
+          </div>
+          <button disabled id="dnload_10_1">Layer 1</button>
+          <button disabled id="dnload_10_2">Layer 2</button>
+          <button disabled id="dnload_10_3">Layer 3</button>
+          <button disabled id="dnload_10_4">Layer 4</button>
+          <button disabled id="dnload_10_5">Layer 5</button>
+          <button disabled id="dnload_10_6">Layer 6</button>
+          <button disabled id="dnload_10_7">Layer 7</button>
+          <button disabled id="dnload_10_8">Layer 8</button>
+          <button disabled id="dnload_10_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_11">Session 11</p>
+            <p id="length_11">0.0</p>
+          </div>
+          <button disabled id="dnload_11_1">Layer 1</button>
+          <button disabled id="dnload_11_2">Layer 2</button>
+          <button disabled id="dnload_11_3">Layer 3</button>
+          <button disabled id="dnload_11_4">Layer 4</button>
+          <button disabled id="dnload_11_5">Layer 5</button>
+          <button disabled id="dnload_11_6">Layer 6</button>
+          <button disabled id="dnload_11_7">Layer 7</button>
+          <button disabled id="dnload_11_8">Layer 8</button>
+          <button disabled id="dnload_11_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_12">Session 12</p>
+            <p id="length_12">0.0</p>
+          </div>
+          <button disabled id="dnload_12_1">Layer 1</button>
+          <button disabled id="dnload_12_2">Layer 2</button>
+          <button disabled id="dnload_12_3">Layer 3</button>
+          <button disabled id="dnload_12_4">Layer 4</button>
+          <button disabled id="dnload_12_5">Layer 5</button>
+          <button disabled id="dnload_12_6">Layer 6</button>
+          <button disabled id="dnload_12_7">Layer 7</button>
+          <button disabled id="dnload_12_8">Layer 8</button>
+          <button disabled id="dnload_12_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_13">Session 13</p>
+            <p id="length_13">0.0</p>
+          </div>
+          <button disabled id="dnload_13_1">Layer 1</button>
+          <button disabled id="dnload_13_2">Layer 2</button>
+          <button disabled id="dnload_13_3">Layer 3</button>
+          <button disabled id="dnload_13_4">Layer 4</button>
+          <button disabled id="dnload_13_5">Layer 5</button>
+          <button disabled id="dnload_13_6">Layer 6</button>
+          <button disabled id="dnload_13_7">Layer 7</button>
+          <button disabled id="dnload_13_8">Layer 8</button>
+          <button disabled id="dnload_13_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_14">Session 14</p>
+            <p id="length_14">0.0</p>
+          </div>
+          <button disabled id="dnload_14_1">Layer 1</button>
+          <button disabled id="dnload_14_2">Layer 2</button>
+          <button disabled id="dnload_14_3">Layer 3</button>
+          <button disabled id="dnload_14_4">Layer 4</button>
+          <button disabled id="dnload_14_5">Layer 5</button>
+          <button disabled id="dnload_14_6">Layer 6</button>
+          <button disabled id="dnload_14_7">Layer 7</button>
+          <button disabled id="dnload_14_8">Layer 8</button>
+          <button disabled id="dnload_14_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_15">Session 15</p>
+            <p id="length_15">0.0</p>
+          </div>
+          <button disabled id="dnload_15_1">Layer 1</button>
+          <button disabled id="dnload_15_2">Layer 2</button>
+          <button disabled id="dnload_15_3">Layer 3</button>
+          <button disabled id="dnload_15_4">Layer 4</button>
+          <button disabled id="dnload_15_5">Layer 5</button>
+          <button disabled id="dnload_15_6">Layer 6</button>
+          <button disabled id="dnload_15_7">Layer 7</button>
+          <button disabled id="dnload_15_8">Layer 8</button>
+          <button disabled id="dnload_15_9">All</button>
+        </div>
+        <div class="file-grid">
+          <div>
+            <p id="session_16">Session 16</p>
+            <p id="length_16">0.0</p>
+          </div>
+          <button disabled id="dnload_16_1">Layer 1</button>
+          <button disabled id="dnload_16_2">Layer 2</button>
+          <button disabled id="dnload_16_3">Layer 3</button>
+          <button disabled id="dnload_16_4">Layer 4</button>
+          <button disabled id="dnload_16_5">Layer 5</button>
+          <button disabled id="dnload_16_6">Layer 6</button>
+          <button disabled id="dnload_16_7">Layer 7</button>
+          <button disabled id="dnload_16_8">Layer 8</button>
+          <button disabled id="dnload_16_9">All</button>
+        </div>
+      </div>
+
+      <div class="lg-space">
+        <h3>Modifier Assignments</h3>
+        <p>
+          Customize the arrangement of your modifiers! Changes take place
+          immediately and do not require you to update the firmware. The ALT
+          banks are accessed using the BANK A and BANK B dip switches on the
+          back of the pedal.
+        </p>
+
+        <ul class="sm-space left-border">
+          <h4>NOTES:</h4>
+          <li>
+            If the names of two modifiers are shown in red, it means they will
+            create some odd behaviour when used together. You’re still free to
+            use them, but it will get weird.
+          </li>
+
+          <li>
+            It’s not possible to use two versions of the same modifier at once.
+          </li>
+        </ul>
+      </div>
+
+      <div class="sm-space mod-grid">
+        <p id="modifiers_A1">Bank A</p>
+
+        <div>
+          <p>1</p>
+          <select class="mod-select" name="" id="bankA1">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+
+        <div>
+          <p>2</p>
+          <select class="mod-select" name="" id="bankA2">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+
+        <div>
+          <p>3</p>
+          <select class="mod-select" name="" id="bankA3">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sm-space mod-grid">
+        <p id="modifiers_A1">Bank A (Alt)</p>
+
+        <div>
+          <p>1</p>
+          <select class="mod-select" name="" id="bankA4">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+
+        <div>
+          <p>2</p>
+          <select class="mod-select" name="" id="bankA5">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+
+        <div>
+          <p>3</p>
+          <select class="mod-select" name="" id="bankA6">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mod-grid">
+        <p id="modifiers_A1">Bank B</p>
+
+        <div>
+          <p>4</p>
+          <select class="mod-select" name="" id="bankB1">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+
+        <div>
+          <p>5</p>
+          <select class="mod-select" name="" id="bankB2">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+
+        <div>
+          <p>6</p>
+          <select class="mod-select" name="" id="bankB3">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mod-grid sm-space">
+        <p id="modifiers_A1">Bank B (Alt)</p>
+
+        <div>
+          <p>4</p>
+          <select class="mod-select" name="" id="bankB4">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+
+        <div>
+          <p>5</p>
+          <select class="mod-select" name="" id="bankB5">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+
+        <div>
+          <p>6</p>
+          <select class="mod-select" name="" id="bankB6">
+            <option value="1">Dropper</option>
+            <option value="2">Scrambler</option>
+            <option value="3">Trimmer (Smooth)</option>
+            <option value="4">Trimmer (Stepped)</option>
+            <option value="5">Filter</option>
+            <option value="6">Speed (Smooth)</option>
+            <option value="7">Speed (Stepped)</option>
+            <option value="16">Speed (Chromatic)</option>
+            <option value="8">Swapper</option>
+            <option value="9">Stutter (Smooth)</option>
+            <option value="10">Stutter (Stepped)</option>
+            <option value="11">Stopper</option>
+            <option value="12">Pitcher (Smooth)</option>
+            <option value="13">Pitcher (Stepped)</option>
+            <option value="14">Stretcher (Smooth)</option>
+            <option value="15">Stretcher (Stepped)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="lg-space">
+        <div>
+          <h3>Additive Assist</h3>
+          <p>
+            Use this for more precise recording of modifiers. When engaged,
+            Blooper gives you an accurate preview of how a one-shot recording
+            will sound during playback.
+          </p>
+        </div>
+
+        <div>
+          <ul class="sm-space left-border">
+            <h4>NOTES:</h4>
+            <li>This feature only affects ADD mode.</li>
+
+            <li>
+              This feature will cause quirks on the clockwise half of Trimmer,
+              and the counter-clockwise half of Stutter.
+            </li>
+          </ul>
+        </div>
+
+        <label class="aa-checkbox">
+          <input type="checkbox" id="add_assist" />
+          Enable
+        </label>
+      </div>
+      <div class="lg-space">
+        <h3>Stability Noise</h3>
+        <p>Customize the level of noise for the stability effect.</p>
+        <div class="stab-slider sm-space">
+          <div class="flex-container">
+            <p id="noise_min">Least</p>
+            <p id="noise_max">Most</p>
+          </div>
+          <input
+            class="slider"
+            type="range"
+            min="1"
+            max="99"
+            step="1"
+            value="50"
+            id="noise"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script>
+    var $ = function (id) {
+      return document.getElementById(id);
+    };
+  </script>
+  <script>
+
+    function debug( text )
+    {
+        //var element = document.createElement( "LI" );
+        //var line = document.createTextNode( text );
+        //element.appendChild( line );
+        //document.getElementById("debug").appendChild(element);
+        //console.log( text );
+    }
+
+    window.addEventListener('load', function()
+    {
+        if(navigator.requestMIDIAccess) {
+            navigator.requestMIDIAccess({sysex:true}).then(_on_midi_success,_on_midi_failure);
+        }
+        else document.write( "USB/MIDI is not available." );
+    });
+
+    var _discover_session = 0, _ready = false;
+    var _session_times = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+    var _session_counts = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+    var _midi_input_port = 0, _midi_output_port = 0;
+    var _dfu_dnload_count = 0, _dfu_dnload_data = 0, _dfu_dnload_size = 0;
+    var _wave_dnload_session = 0, _wave_dnload_track = 0;
+    var _wave_dnload_data = [], _wave_dnload_length = 0, _wave_dnload_offset = 0;
+    var _wave_upload_count = 0, _wave_upload_data = [], _wave_upload_size = 0;
+
+    function _on_midi_success( midiAccess )
+    {
+        midiAccess.onstatechange = _on_midi_connect;
+        var event = new Object();
+        event.currentTarget = midiAccess;
+        _on_midi_connect( event );
+    }
+
+    function _on_midi_failure( error )
+    {
+        //document.write( "MIDI access denied." );
+        $('message').innerHTML = "MIDI access blocked by Chrome";
+    }
+
+    function _on_midi_connect( event )
+    {
+        var midi_access  = event.currentTarget;
+        var midi_inputs  = event.currentTarget.inputs.values ();
+        var midi_outputs = event.currentTarget.outputs.values();
+
+        _ready = false;;
+
+        //console.log( midi_inputs );
+        $('message').innerHTML = "(Not detected)";
+
+        $('update').disabled = true;
+        for( var session = 1; session <= 16; ++session ) {
+            $('session_'+session).innerHTML = "Session " + session;
+            $('length_'+session).innerHTML = "0.0";
+            for( var track = 1; track <= 9; ++track ) {
+                $("dnload_"+session+"_"+track).disabled = true;
+            }
+        }
+        for( var ii = 1; ii <= 6; ++ii ) $('bankA'+ii).disabled = true;
+        for( var ii = 1; ii <= 6; ++ii ) $('bankB'+ii).disabled = true;
+
+        for( var port = midi_inputs.next(); !port.done; port = midi_inputs.next() ) {
+
+            debug( "MIDI Port: Manufacturer='" + port.value.manufacturer +
+                   "' Name='" + port.value.name +
+                   "' Type='" + port.value.type +
+                   "' State='" + port.value.state +
+                   "' Conn='" + port.value.connection );
+
+            if( port.value.manufacturer.includes("Blooper") || port.value.name.includes("Blooper") ) {
+                port.value.onmidimessage = _on_midi_message;
+                if( port.value.connection == "open" ) _midi_input_port = port.value;
+                $('message').innerHTML = "(Detected but not responding";
+
+        }}
+
+        for( var port = midi_outputs.next(); !port.done; port = midi_outputs.next())
+        {
+            debug( "MIDI Port: Manufacturer='" + port.value.manufacturer +
+                   "' Name='" + port.value.name +
+                   "' Type='" + port.value.type +
+                   "' State='" + port.value.state +
+                   "' Conn='" + port.value.connection );
+
+            if( port.value.manufacturer.includes("Blooper") || port.value.name.includes("Blooper") ) {
+                _midi_output_port = port.value;
+                $('message').innerHTML = "(Detected but not responding)";
+        }}
+        _midi_output_port.send( _prop_to_midi( [0x0001,0,0,0,0,0] ));
+    }
+
+    function array_to_ui1  ( a ) { return a[0]; }
+    function array_to_ui2be( a ) { return a[1]+256*a[0]; }
+    function array_to_ui2le( a ) { return a[0]+256*a[1]; }
+    function array_to_ui4be( a ) { return 16777216*a[0]+65536*a[1]+256*a[2]+a[3]; }
+    function array_to_ui4le( a ) { return a[0]+256*a[1]+65536*a[2]+16777216*a[3]; }
+
+    function ui1_to_array  ( a, i, x ) { a[i] = x; }
+    function ui2be_to_array( a, i, x ) { a[i+0] = x/256; a[i+1] = x & 255; }
+    function ui2le_to_array( a, i, x ) { a[i+1] = x/256; a[i+0] = x & 255; }
+    function ui4be_to_array( a, i, x ) { a[i+0] = x/16777216; a[i+1] = (x/65536) & 255; a[i+2] = (x/256) & 255; a[i+3] = x & 255; }
+    function ui4le_to_array( a, i, x ) { a[i+0] = x & 255; a[i+1] = (x/256) & 255; a[i+2] = (x/65536) & 255; a[i+3] = x/16777216; }
+
+    function reload_page()
+    {
+        //location.reload();
+        //$('update').innerHTML = "Update";
+        //$('dnload'+_wave_dnload_session).innerHTML = "Download";
+        //$('save').innerHTML = "";
+        _ready = false;;
+    }
+
+    function load_page()
+    {
+    	$('update').onclick = _update_firmware;
+        $('update').disabled = false;
+
+        for( var session = 1; session <= 16; ++session )
+        {
+            var count = _session_counts[session-1];
+            var time = _session_times[session-1];
+
+            if( count == 0 ) time = 0;
+
+            $('session_'+session).innerHTML = "Session " + session;
+            $('length_'+session).innerHTML = (time/100.0).toFixed(1);
+
+            for( var track = 1; track <= count; ++track ) {
+                $("dnload_"+session+"_"+track).innerHTML = "Layer " + track;
+                $("dnload_"+session+"_"+track).onclick = _dnload_wavefile;
+                $("dnload_"+session+"_"+track).disabled = false;
+                $("dnload_"+session+"_9").disabled = false;
+                $("dnload_"+session+"_9").onclick = _dnload_all_wavefiles;
+            }
+        }
+        for( var ii = 1; ii <= 6; ++ii ) $('bankA'+ii).style.color = '#000';
+        for( var ii = 1; ii <= 6; ++ii ) $('bankB'+ii).style.color = '#000';
+
+        for( var ii = 1; ii <= 6; ++ii ) $('bankA'+ii).disabled = false;
+        for( var ii = 1; ii <= 6; ++ii ) $('bankB'+ii).disabled = false;
+
+        for( var ii = 1; ii <= 6; ++ii ) $('bankA'+ii).onchange = _update_settings;
+        for( var ii = 1; ii <= 6; ++ii ) $('bankB'+ii).onchange = _update_settings;
+
+        $('add_assist').onchange = _update_settings;
+
+        for( var ii = 1; ii <= 6; ++ii ) {
+            for( var jj = 1; jj <= 6; ++jj ) {
+                if( ($('bankA'+ii).value == 2 && $('bankB'+jj).value ==  9) ||
+                    ($('bankA'+ii).value == 2 && $('bankB'+jj).value == 10) ||
+                    ($('bankB'+jj).value == 2 && $('bankA'+ii).value ==  9) ||
+                    ($('bankB'+jj).value == 2 && $('bankA'+ii).value == 10) ) {
+                    $('bankA'+ii).style.color = '#f00';
+                    $('bankB'+jj).style.color = '#f00';
+                }
+            }
+        }
+        if( $('bankA1').value == 0 ) $('bankA1').value = 6;
+        if( $('bankA2').value == 0 ) $('bankA2').value = 1;
+        if( $('bankA3').value == 0 ) $('bankA3').value = 3;
+        if( $('bankA4').value == 0 ) $('bankA4').value = 7;
+        if( $('bankA5').value == 0 ) $('bankA5').value = 1;
+        if( $('bankA6').value == 0 ) $('bankA6').value = 4;
+        if( $('bankB1').value == 0 ) $('bankB1').value = 7;
+        if( $('bankB2').value == 0 ) $('bankB2').value = 2;
+        if( $('bankB3').value == 0 ) $('bankB3').value = 5;
+        if( $('bankB4').value == 0 ) $('bankB4').value = 10;
+        if( $('bankB5').value == 0 ) $('bankB5').value = 8;
+        if( $('bankB6').value == 0 ) $('bankB6').value = 5;
+
+        $('noise').onchange = _update_settings;
+
+        _ready = true;
+
+        _discover_session = 0;
+
+        _session_times = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+        _session_counts = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+        _dfu_dnload_count = _dfu_dnload_data = _dfu_dnload_size = 0;
+
+        _wave_dnload_session = _wave_dnload_track = 0;
+        _wave_dnload_data = []; _wave_dnload_length = _wave_dnload_offset = 0;
+        _wave_upload_data = []; _wave_upload_count = _wave_upload_size = 0;
+    }
+
+    function _on_midi_message( event )
+    {
+        var property = _midi_to_prop( event.data );
+        if( property[0] == 0 ) return;
+     	var opcode = property[0] & 0xFFFF;
+
+        //console.log(property[0]);
+        //console.log(property[0],property[1].toString(16),property[2].toString(16),property[3].toString(16),property[4].toString(16),property[5].toString(16));
+
+        // 0x0001 - Identify the device, should be ID (3DEGFLEX) and version numbers
+
+        if( opcode == 8 )
+        {
+            var session = property[1], size = property[2], tracks = property[3];
+
+            //console.log( session, size, tracks );
+            if( session > 0 ) {
+                if( size > 0 ) {
+                    _session_times[session-1] = size;
+                    _session_counts[session-1] = tracks;
+                }
+            }
+            if( ++_discover_session <= 16 ) {
+                _midi_output_port.send( _prop_to_midi( [8,_discover_session,0,0,0,0] ));
+            }
+            else {
+                _midi_output_port.send( _prop_to_midi( [9,0,0,0,0,0] ));
+            }
+        }
+        if( opcode == 9 )
+        {
+            _midi_output_port.send( _prop_to_midi( [10,0,0,0,0,0] ));
+        }
+        if( opcode == 10 ) // Read Modifiers
+        {
+            $('bankA1').value = (((property[5] >>  0) & 3) << 4) + ((property[1] >>  0) & 15);
+            $('bankA2').value = (((property[5] >>  2) & 3) << 4) + ((property[1] >>  4) & 15);
+            $('bankA3').value = (((property[5] >>  4) & 3) << 4) + ((property[1] >>  8) & 15);
+            $('bankA4').value = (((property[5] >>  6) & 3) << 4) + ((property[1] >> 12) & 15);
+            $('bankA5').value = (((property[5] >>  8) & 3) << 4) + ((property[1] >> 16) & 15);
+            $('bankA6').value = (((property[5] >> 10) & 3) << 4) + ((property[1] >> 20) & 15);
+
+            $('bankB1').value = (((property[5] >> 12) & 3) << 4) + ((property[2] >>  0) & 15);
+            $('bankB2').value = (((property[5] >> 14) & 3) << 4) + ((property[2] >>  4) & 15);
+            $('bankB3').value = (((property[5] >> 16) & 3) << 4) + ((property[2] >>  8) & 15);
+            $('bankB4').value = (((property[5] >> 18) & 3) << 4) + ((property[2] >> 12) & 15);
+            $('bankB5').value = (((property[5] >> 20) & 3) << 4) + ((property[2] >> 16) & 15);
+            $('bankB6').value = (((property[5] >> 22) & 3) << 4) + ((property[2] >> 20) & 15);
+
+        	//console.log( $('bankA1').value, $('bankA2').value, $('bankA3').value,
+        	//             $('bankA4').value, $('bankA5').value, $('bankA6').value,
+        	//             $('bankB1').value, $('bankB2').value, $('bankB3').value,
+        	//             $('bankB4').value, $('bankB5').value, $('bankB6').value );
+
+            if( property[3] != 0 )
+            {
+                $('noise').value = property[3];
+            }
+
+            if( property[4] == 0 ) $('add_assist').checked = false;
+            else $('add_assist').checked = true;
+
+            $('message').innerHTML = "(Ready)";
+            load_page();
+        }
+        if( opcode == 1 )
+        {
+            _ready = false;;
+
+            _midi_output_port.send( _prop_to_midi( [8,_discover_session=1,0,0,0,0] ));
+
+    		//$('upload_wavefile_button').onclick = function(ee) { $('upload_wavefile_input').click(); };
+    		//$('upload_wavefile_input').oninput = _upload_wavefile;
+        }
+
+        // 0x0002 - Begin firmware upgrade, echoed back to host
+        // 0x0003 - Next 20 bytes of firmware image data, echoed
+        // 0x0004 - End firmware upgrade and reset (no USB property echo!)
+
+        else if( opcode == 2 || opcode == 3 )
+        {
+    		if( _dfu_dnload_data.length > 0 )
+    		{
+    			var property = [3,0,0,0,0,0];
+
+    			property[1] = array_to_ui4be( _dfu_dnload_data );
+    			_dfu_dnload_data = _dfu_dnload_data.slice(4);
+    			property[2] = array_to_ui4be( _dfu_dnload_data );
+    			_dfu_dnload_data = _dfu_dnload_data.slice(4);
+    			property[3] = array_to_ui4be( _dfu_dnload_data );
+    			_dfu_dnload_data = _dfu_dnload_data.slice(4);
+    			property[4] = array_to_ui4be( _dfu_dnload_data );
+    			_dfu_dnload_data = _dfu_dnload_data.slice(4);
+
+    			_midi_output_port.send( _prop_to_midi( property ));
+
+    			if( _dfu_dnload_count == 0 || (_dfu_dnload_count % 16) == 0 )
+    			{
+    				progress = (1600.0 * _dfu_dnload_count) / _dfu_dnload_size;
+    				if( progress > 99 ) progress = 99;
+    				$('update').innerHTML = progress.toPrecision(2) + "\%";
+    			}
+    			_dfu_dnload_count += 1;
+    		}
+    		else
+    		{
+                _on_midi_connect_done = 0;
+    			var property = [4,0,0,0,0,0];
+    			_midi_output_port.send( _prop_to_midi( property ));
+    			$('update').innerHTML = "Finished";
+    			setTimeout( reload_page, 1000 );
+    		}
+    	}
+
+        // 0x0005/6/7 - Wavefile download
+
+        else if( opcode == 5 || opcode == 6 || opcode == 7 )
+        {
+            if( opcode == 5 && _wave_dnload_data.length == 0 )
+            {
+                _wave_dnload_data = [];
+                _wave_dnload_length = property[1];
+                _wave_dnload_offset = 0;
+
+                if( _wave_dnload_length > 0 ) // Length
+                {
+                    $('dnload_'+_wave_dnload_session+"_"+_wave_dnload_track).innerHTML = ". . .";
+                    _midi_output_port.send( _prop_to_midi( [6,_wave_dnload_track,0,0,0,0] ));
+                }
+                else
+                {
+                    $('dnload_'+_wave_dnload_session+"_"+_wave_dnload_track.innerHTML) = "Done";
+        			setTimeout( reload_page, 1000 );
+                }
+            }
+            if( opcode == 6 )
+            {
+                for( var ii = 0; ii < 32 && _wave_dnload_offset < _wave_dnload_length; ++ii )
+                {
+                    _wave_dnload_data.push( property[1+ii] );
+                    _wave_dnload_offset++;
+                }
+                progress = 100 * _wave_dnload_offset / _wave_dnload_length;
+                if( progress > 99 ) progress = 99;
+                $('dnload_'+_wave_dnload_session+"_"+_wave_dnload_track).innerHTML = progress.toPrecision(2) + "\%";
+
+                if( _wave_dnload_offset < _wave_dnload_length ) {
+                    _midi_output_port.send( _prop_to_midi( [6,_wave_dnload_track,0,0,0,0] ));
+                }
+                else {
+                    _midi_output_port.send( _prop_to_midi( [7,0,0,0,0,0] ));
+                }
+            }
+            if( opcode == 7 )
+            {
+                $('dnload_'+_wave_dnload_session+"_"+_wave_dnload_track).innerHTML = "Done";
+
+                var wavefile = samples_to_wave( _wave_dnload_data );
+
+                var a = document.createElement("a");
+                document.body.appendChild(a);
+                a.style = "display: none";
+
+                blob = new Blob( [wavefile], {type: "octet/stream"} );
+
+                url = window.URL.createObjectURL(blob);
+                a.href = url;
+                a.download = 'blooper.'+_wave_dnload_session+"."+_wave_dnload_track+'.wav';
+                a.click();
+                window.URL.revokeObjectURL(url);
+
+                _wave_dnload_data = [];
+    			//setTimeout( reload_page, 1000 );
+
+                if( _wave_dnload_all )
+                {
+                    var id = "dnload_"+_wave_dnload_session+"_"+(_wave_dnload_track+1);
+
+                    console.log( id );
+                    console.log( $(id) );
+
+                    if( _wave_dnload_track == 8 ) _wave_dnload_all = false;
+                    else if( $(id).disabled ) _wave_dnload_all = false;
+                    else
+                    {
+                        _wave_dnload_track = _wave_dnload_track + 1;
+                        _midi_output_port.send( _prop_to_midi( [5,_wave_dnload_session,_wave_dnload_track,0,0,0] ));
+                    }
+                }
+
+                if( !_wave_dnload_all ) {
+                    for( var ii = 1; ii <= 16; ++ii ) $("dnload_"+ii+"_9").disabled = false;
+                    _midi_output_port.send( _prop_to_midi( [1,0,0,0,0,0] ));
+                }
+            }
+        }
+
+        // 0x0007 - Begin wavefile download, echoed back to host
+        // 0x0008 - Next 20 bytes of wave audio data, echoed
+        // 0x0009 - End download
+
+        else if( opcode == 0x0008 || opcode == 0x0009 || opcode == 0x000A )
+        {
+    		/*
+    		if( _wave_upload_data.length > 0 )
+    		{
+    			var property = [0x0007,0,0,0,0,0];
+
+    			property[1] = array_to_ui4be( _wave_upload_data );
+    			_wave_upload_data = _wave_upload_data.slice(4);
+    			property[2] = array_to_ui4be( _wave_upload_data );
+    			_wave_upload_data = _wave_upload_data.slice(4);
+    			property[3] = array_to_ui4be( _wave_upload_data );
+    			_wave_upload_data = _wave_upload_data.slice(4);
+    			property[4] = array_to_ui4be( _wave_upload_data );
+    			_wave_upload_data = _wave_upload_data.slice(4);
+
+    			_midi_output_port.send( _prop_to_midi( property ));
+
+    			if( _wave_upload_count == 0 || (_wave_upload_count % 16) == 0 )
+    			{
+    				progress = (1600.0 * _wave_dnload_count) / _wave_upload_size;
+    				if( progress > 99 ) progress = 99;
+    				$('upload_wavefile_button').innerHTML = progress.toPrecision(2) + "\%";
+    			}
+    			_wave_upload_count += 1;
+    		}
+    		else
+    		{
+    			var property = [0x0009,0,0,0,0,0];
+    			_midi_output_port.send( _prop_to_midi( property ));
+    			$('upload_wavefile_button').innerHTML = "Finished";
+    		}
+    		*/
+        }
+    }
+
+    function _update_firmware( event )
+    {
+        if( !_ready ) return;
+        _ready = false;;
+
+        $('update').innerHTML = ". . .";
+        data = new Uint8Array( _image.length );
+
+        for( var ii = 0; ii < _image.length; ++ii ) data[ii] = _image.charCodeAt(ii);
+
+        _dfu_dnload_count = 0;
+        _dfu_dnload_data = data;
+        _dfu_dnload_size = data.length;
+
+        _midi_output_port.send( _prop_to_midi( [2,0,0,0,0,0] ));
+    }
+
+    var _wave_dnload_all = false;
+
+    function _dnload_all_wavefiles( object )
+    {
+        var ss = 0, tt = 0;
+        id = object.target.id;
+        if( id.charAt(8) == '_' ) { ss = id.slice(7,8); tt = id.slice(9); }
+        if( id.charAt(9) == '_' ) { ss = id.slice(7,9); tt = id.slice(10); }
+
+        _wave_dnload_all = true;
+        _wave_dnload_session = parseInt( ss );
+        _wave_dnload_track = 1;
+        _midi_output_port.send( _prop_to_midi( [5,_wave_dnload_session,1,0,0,0] ));
+    }
+
+    function _dnload_wavefile( object )
+    {
+        if( !_ready ) return;
+        _ready = false;;
+
+        var ss = 0, tt = 0;
+        id = object.target.id;
+        if( id.charAt(8) == '_' ) { ss = id.slice(7,8); tt = id.slice(9); }
+        if( id.charAt(9) == '_' ) { ss = id.slice(7,9); tt = id.slice(10); }
+
+        console.log( object.target.id );
+        _wave_dnload_session = parseInt( ss );
+        _wave_dnload_track = parseInt( tt );
+
+        _midi_output_port.send( _prop_to_midi( [5,_wave_dnload_session,_wave_dnload_track,0,0,0] ));
+    }
+
+    function _upload_wavefile( object )
+    {
+        if( !_ready ) return;
+        $('upload_wavefile_button').innerHTML = ". . .";
+
+        var reader = new FileReader();
+        reader.onload = function(ee)
+        {
+            data = new Uint8Array( ee.target.result );
+
+            data = wave_to_samples( data );
+
+            _wave_upload_count = 0;
+            _wave_upload_data = data;
+            _wave_upload_size = data.length;
+
+            _midi_output_port.send( _prop_to_midi( [8,0,0,0,0,0] ));
+        };
+        reader.readAsArrayBuffer( object.target.files[0] );
+    }
+
+    function _update_settings( event )
+    {
+    	console.log( $('bankA1').value, $('bankA2').value, $('bankA3').value,
+    				 $('bankA4').value, $('bankA5').value, $('bankA6').value,
+    				 $('bankB1').value, $('bankB2').value, $('bankB3').value,
+    				 $('bankB4').value, $('bankB5').value, $('bankB6').value );
+
+        console.log($('add_assist').checked);
+
+        var prop = [ 11,0,0,0,0,0 ];
+
+        //var prop = [11, ($('bankA1').value<< 0)+($('bankA2').value<< 4)+($('bankA3').value<< 8)+
+        //                ($('bankA4').value<<12)+($('bankA5').value<<16)+($('bankA6').value<<20),
+        //                ($('bankB1').value<< 0)+($('bankB2').value<< 4)+($('bankB3').value<< 8)+
+        //                ($('bankB4').value<<12)+($('bankB5').value<<16)+($('bankB6').value<<20),
+        //                $('noise').value, $('add_assist').checked,0];
+
+        prop[1] = (($('bankA1').value & 15) <<  0)
+                + (($('bankA2').value & 15) <<  4)
+                + (($('bankA3').value & 15) <<  8)
+                + (($('bankA4').value & 15) << 12)
+                + (($('bankA5').value & 15) << 16)
+                + (($('bankA6').value & 15) << 20);
+
+        prop[2] = (($('bankB1').value & 15) <<  0)
+                + (($('bankB2').value & 15) <<  4)
+                + (($('bankB3').value & 15) <<  8)
+                + (($('bankB4').value & 15) << 12)
+                + (($('bankB5').value & 15) << 16)
+                + (($('bankB6').value & 15) << 20);
+
+        prop[3] = $('noise').value;
+        prop[4] = $('add_assist').checked;
+
+    	prop[5] = (((($('bankA1').value) >> 4) & 3) <<  0)
+                | (((($('bankA2').value) >> 4) & 3) <<  2)
+                | (((($('bankA3').value) >> 4) & 3) <<  4)
+                | (((($('bankA4').value) >> 4) & 3) <<  6)
+                | (((($('bankA5').value) >> 4) & 3) <<  8)
+                | (((($('bankA6').value) >> 4) & 3) << 10)
+                | (((($('bankB1').value) >> 4) & 3) << 12)
+                | (((($('bankB2').value) >> 4) & 3) << 14)
+                | (((($('bankB3').value) >> 4) & 3) << 16)
+                | (((($('bankB4').value) >> 4) & 3) << 18)
+                | (((($('bankB5').value) >> 4) & 3) << 20)
+                | (((($('bankB6').value) >> 4) & 3) << 22);
+
+        console.log( prop[1].toString(16), prop[2].toString(16), prop[5].toString(16) );
+
+        _midi_output_port.send( _prop_to_midi( prop ));
+    }
+
+    function _prop_to_midi( property )
+    {
+        var midi_data = [0xF0];
+        for( var ii = 0; ii < 6; ++ii )
+        {
+            midi_data.push( (property[ii]>>28)&15 ); midi_data.push( (property[ii]>>24)&15 );
+            midi_data.push( (property[ii]>>20)&15 ); midi_data.push( (property[ii]>>16)&15 );
+            midi_data.push( (property[ii]>>12)&15 ); midi_data.push( (property[ii]>> 8)&15 );
+            midi_data.push( (property[ii]>> 4)&15 ); midi_data.push( (property[ii]>> 0)&15 );
+        }
+        midi_data.push( 0xF7 );
+        return midi_data;
+    }
+
+    function _midi_to_prop( midi_data )
+    {
+        var property = [0,0,0,0,0,0];
+
+        if( midi_data[0] == 0xF0 && midi_data[49] == 0xF7 )
+        {
+            var property = [0,0,0,0,0,0];
+            for( var ii = 0; ii < 6; ++ii )
+            {
+                property[ii] = (midi_data[8*ii+1]<<28) + (midi_data[8*ii+2]<<24)
+                             + (midi_data[8*ii+3]<<20) + (midi_data[8*ii+4]<<16)
+                             + (midi_data[8*ii+5]<<12) + (midi_data[8*ii+6]<< 8)
+                             + (midi_data[8*ii+7]<< 4) + (midi_data[8*ii+8]<< 0);
+            }
+            return property;
+        }
+        else if( midi_data[0] == 0xF0 && midi_data[265] == 0xF7 )
+        {
+            for( var ii = 0; ii < 1+36; ++ii )
+            {
+                property[ii] = (midi_data[8*ii+1]<<28) + (midi_data[8*ii+2]<<24)
+                             + (midi_data[8*ii+3]<<20) + (midi_data[8*ii+4]<<16)
+                             + (midi_data[8*ii+5]<<12) + (midi_data[8*ii+6]<< 8)
+                             + (midi_data[8*ii+7]<< 4) + (midi_data[8*ii+8]<< 0);
+            }
+            return property;
+        }
+
+        console.log( "??? " + midi_data.length );
+        return [0,0,0,0,0,0];
+    }
+
+    function _property_to_text( property )
+    {
+    	var text = "";
+    	text += String.fromCharCode( property[1]&255, (property[1]>>8)&255, (property[1]>>16)&255, property[1]>>24 );
+    	text += String.fromCharCode( property[2]&255, (property[2]>>8)&255, (property[2]>>16)&255, property[2]>>24 );
+    	text += String.fromCharCode( property[3]&255, (property[3]>>8)&255, (property[3]>>16)&255, property[3]>>24 );
+    	text += String.fromCharCode( property[4]&255, (property[4]>>8)&255, (property[4]>>16)&255, property[4]>>24 );
+    	text += String.fromCharCode( property[5]&255, (property[5]>>8)&255, (property[5]>>16)&255, property[5]>>24 );
+    	return text;
+    }
+
+    function samples_to_wave( samples )
+    {
+        var data = new Uint8Array( 44 + 3 * samples.length );
+
+        ui4le_to_array( data, 0, 0x46464952 ); // 'RIFF'
+        ui4le_to_array( data, 4, 36 + 3 * samples.length ); // Total size
+        ui4le_to_array( data, 8, 0x45564157 ); // 'WAVE'
+
+        ui4le_to_array( data, 12, 0x20746D66 ); // 'fmt '
+        ui4le_to_array( data, 16, 16 ); // Block size
+        ui2le_to_array( data, 20, 1 ); // Format
+        ui2le_to_array( data, 22, 1 ); // Channels
+        ui4le_to_array( data, 24, 32000 ); // Rate
+        ui4le_to_array( data, 28, samples.length ); // Count
+        ui2le_to_array( data, 32, 3 ); // 3 byte word alignment
+        ui2le_to_array( data, 34, 24 ); // 24 bits per sample
+
+        ui4le_to_array( data, 36, 0x61746164 ); // 'data'
+        ui4le_to_array( data, 40, 3 * samples.length ); // Block size
+
+        for( var ii = 0; ii < samples.length; ++ii )
+        {
+            data[44+3*ii+0] = samples[ii] & 255;
+            data[44+3*ii+1] = (samples[ii]/256) & 255;
+            data[44+3*ii+2] = (samples[ii]/65536) & 255;
+        }
+        return data;
+    }
+
+    function wave_to_samples( data )
+    {
+        var format, channels, rate, thruput, align, width;
+        var samples = new Array();
+        var rate = 0; samples = [];
+        var group_id   = array_to_ui4le(data); data = data.slice(4); // Signature for 'RIFF'
+        var total_size = array_to_ui4le(data); data = data.slice(4);
+        var type_id    = array_to_ui4le(data); data = data.slice(4); // Signature for 'WAVE'
+
+        console.log( group_id, total_size, type_id  );
+
+        while( 1 )
+        {
+            if( data.length < 8 ) break;
+            var blockid = array_to_ui4le(data); data = data.slice(4);
+            var blocksz = array_to_ui4le(data); data = data.slice(4);
+
+            console.log( blockid, blocksz );
+
+            if( blockid == 0x20746D66) // Signature for 'fmt'
+            {
+                if( data.length < 16 ) break;
+                format   = array_to_ui2le(data); data = data.slice(2);
+                channels = array_to_ui2le(data); data = data.slice(2);
+                rate     = array_to_ui4le(data); data = data.slice(4);
+                thruput  = array_to_ui4le(data); data = data.slice(4);
+                align    = array_to_ui2le(data); data = data.slice(2);
+                width    = array_to_ui2le(data); data = data.slice(2);
+                console.log( format, channels, rate, thruput, align, width );
+                //console.log( "WaveIn: ByteCount=%u Channels=%u Rate=%u WordSize=%u", blocksz,channels,rate,width );
+            }
+            else if( blockid == 0x61746164 ) // Signature for 'data'
+            {
+                if( data.length < blocksz ) break;
+                var count = blocksz / (width/8);
+                if( channels == 1 ) {
+                    while( count-- > 0  ) {
+                        if( width == 8 ) {
+                            samples.push( data[0]*256*256*256 );
+                            data = data.slice(1);
+                        }
+                        if( width == 16 ) {
+                            samples.push( data[1]*256*256*256 + data[0]*256*256 );
+                            data = data.slice(2);
+                        }
+                        if( width == 24 ) {
+                            samples.push( data[2]*256*256*256 + data[1]*256*256 + data[0]*256 );
+                            data = data.slice(3);
+                        }
+                        if( width == 32 ) {
+                            samples.push( data[3]*256*256*256 + data[2]*256*256 + data[1]*256 + data[0] );
+                            value += data[0];
+                            data = data.slice(4);
+                        }
+                    }
+                }
+            }
+        }
+        return samples;
+    }
+  </script>
+</html>
